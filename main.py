@@ -44,6 +44,5 @@ text_model = generate_model()
 while True:
     status = get_markov(text_model, 280, 40)
     if status:
-        api.update_status()
-        print(status)
+        api.update_status(status)
         break
